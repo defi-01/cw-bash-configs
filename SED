@@ -1,0 +1,14 @@
+# Replace a Word in a File
+sed 's/technology/innovation/gI' sedtest
+
+# Delete Lines Matching a Pattern
+sed '2,$d' sedtest
+
+# Add a Line at the Beginning of a File
+sed '1icloud is all' sedtest
+
+# Replace a Line Based on Line Number
+sed '4s/.*/CLOUD SERVICES/' sedtest
+
+# Search and Replace with a Backup File
+cp sedtest sedtest_backup && sed -i 's/cloud/cloud services/gI' sedtest

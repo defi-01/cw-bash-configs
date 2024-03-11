@@ -1,0 +1,14 @@
+# Print Specific Columns from a CSV File
+awk -F "," '{print $1, $3}' components.csv
+
+# Sum Values in a Column
+awk -F "," '{sum += $3} END {print sum}' components.csv
+
+# Print Lines Based on a Condition
+awk -F "," '$1 == "CPU"' components.csv
+
+# Find and Replace Text in a File
+awk -F "," '{gsub("HDD", "SSD"); print $0}' components.csv
+
+# Extract Specific Fields with Delimiter
+awk -F ":" '{print $1}' /etc/passwd
