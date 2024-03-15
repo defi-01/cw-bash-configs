@@ -1,0 +1,17 @@
+# Backup a Directory Every Night at Midnight
+0 0 * * *     tar -cvf /home/adminvm/crontab/backups/backups_$(date +\%Y-\%m-\%d_\%H-\%M-\%S).tar /home/adminvm/crontab/backups/*config
+
+# Update System Packages Every Sunday at 2 AM
+0 2 * * 0     apt-get update && apt-get upgrade -y
+
+# Clean Up Temporary Files Every Friday at 10 PM
+0 10 * * 5    rm -r /var/tmp/
+
+# Generate Weekly Report Every Monday at 8 AM
+0 8 * * 1     cp -r /var/log /home/adminvm/crontab/backups/weekly_report
+
+# Restart a Service Every Day at 3 AM
+0 3 * * *     systemctl restart NetworkManager
+
+# Site loss percentage
+*/55 10-19 * * 1-5    /home/adminvm/ping_cisco.sh >> result_ping.txt
