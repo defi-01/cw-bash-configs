@@ -3,7 +3,7 @@
 ACCESS_LOG="PATH"
 
 function ShowHelp {
-    echo "Script description: This script provides the information about web-server logs"
+    echo "Script description: This script provides information about web-server logs."
     echo "Supported commands:"
     echo "  top ip|url|user-agent [NUMBER OF LINES]                Show top items"
     echo "  req-time <DATETIME>                                    Show the total number of requests DATE/TIME"
