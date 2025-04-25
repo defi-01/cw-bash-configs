@@ -12,4 +12,4 @@ if [ -z "${LOG_FD}" ]; then
   exit 1
 fi
 
-sudo cat /proc/${NGINX_PID}/fd/${LOG_FD}
+sudo cat /proc/${NGINX_PID}/fd/${LOG_FD} 
