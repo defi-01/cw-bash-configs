@@ -11,4 +11,4 @@ sed '1icloud is all' sedtest
 sed '4s/.*/CLOUD SERVICES/' sedtest
 
 # Search and Replace with a Backup File
-cp sedtest sedtest_backup && sed -i 's/cloud/cloud services/gI' sedtest
+cp sedtest sedtest_backup && sed -i 's/cloud/cloud services/gI' sedtest 
