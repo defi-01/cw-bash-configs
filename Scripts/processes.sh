@@ -1,4 +1,5 @@
-#  increase the value of CPU Load Average above 80%
+#  Increase the value of CPU Load Average above 80%
+
 #!/bin/bash
 
 if ! command -v stress &> /dev/null; then
