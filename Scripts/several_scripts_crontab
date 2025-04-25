@@ -14,4 +14,4 @@
 0 3 * * *     systemctl restart NetworkManager
 
 # Site loss percentage
-*/55 10-19 * * 1-5    /home/adminvm/ping_cisco.sh >> result_ping.txt
+*/55 10-19 * * 1-5    /home/adminvm/ping_cisco.sh >> result_ping.txt 
