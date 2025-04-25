@@ -14,7 +14,7 @@ paste -d ' ' ${TIME_LOG} ${TRAINING_LOG} > ${MY_LOG}
 # [2] Showing only the events that are timestamped at 13:37 in the my.log file
 grep -E '(^| )13:37($| )' ${MY_LOG}
 
-# [4] Displaying only the columns "Mounted on" and "Use%" from the disk space information, extracted from command
+# [4] Displaying only the columns "Mounted on" and "Use%" from the disk space information, extracted from the command
 df -h /home | awk 'NR==2 {print $6, $5}'
 
 # [6] Counting occurrences of the word "Pharetra" in my.log, ignoring case sensitivity
