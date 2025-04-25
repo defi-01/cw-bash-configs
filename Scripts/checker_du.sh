@@ -1,4 +1,5 @@
 # A script to check disk space usage and send an email alert if it's below a certain threshold.
+
 #!/bin/bash
 
 mail="test@gmail.com"
