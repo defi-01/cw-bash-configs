@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # [1]
-echo 'Checking top 20 most accessed URLs on this server with number of requests they receive'
+echo 'Checking top 20 most accessed URLs on this server with the number of requests they receive'
 grep -oP '"[A-Z]+\s\K\/[^ "]+' access.log | sed 's/\?.*//' | sort | uniq -c | sort -nr | head -n 20
 echo "============================================================================================="
 
