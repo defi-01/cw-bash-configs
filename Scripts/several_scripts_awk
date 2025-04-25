@@ -11,4 +11,4 @@ awk -F "," '$1 == "CPU"' components.csv
 awk -F "," '{gsub("HDD", "SSD"); print $0}' components.csv
 
 # Extract Specific Fields with Delimiter
-awk -F ":" '{print $1}' /etc/passwd
+awk -F ":" '{print $1}' /etc/passwd 
