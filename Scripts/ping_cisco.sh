@@ -1,4 +1,5 @@
 # The script records packet loss percentage data from pinging "cisco.com" along with the current date and time to a file named "result_ping.txt".
+
 #!/bin/bash
 
 ping_result=$(ping -c 17 cisco.com)
