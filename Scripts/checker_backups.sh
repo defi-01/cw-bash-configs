@@ -1,4 +1,4 @@
-# a script to create backups of a directory and keep only the last 5 backups.
+# A script to create backups of a directory and keep only the last 5 backups.
 
 #!/bin/bash
 
