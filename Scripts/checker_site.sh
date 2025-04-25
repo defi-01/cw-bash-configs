@@ -12,4 +12,4 @@ if [[ "$response" =~ "200 OK" ]]; then
         echo "$(date +"%Y-%m-%d %T"): website $website is up" >> "$log_file"
     else
         echo "$(date +"%Y-%m-%d %T"): website $website is down" >> "$log_file"
-fi
+fi 
