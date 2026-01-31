@@ -7,3 +7,4 @@ if [ "$cpu_usage" -gt "$threshold" ]; then
     echo "High CPU usage detected: $cpu_usage%"
     # Add alert/notification logic here
 fi
+
