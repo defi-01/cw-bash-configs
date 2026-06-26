@@ -27,3 +27,5 @@ echo "======================================================================"
 
 # [6]
 echo 'Checking total number of requests to pages that were not found on the site'
+awk '$9 == 404' /var/log/nginx/access.log | wc -l
+echo "=========================================================================="
